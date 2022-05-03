@@ -1,0 +1,765 @@
+div{
+    padding:20px;
+    background-image:url("imglapp.jpg") ;
+    background-size: cover;
+    height:300px;
+    text-align: center;
+}
+
+h1{
+    color: black;
+}
+
+
+table{
+     color: black;
+     border-collapse: collapse;
+     display: none;
+     margin-left: auto;
+     margin-right:auto;
+    
+      
+    }
+  
+th, td {
+    border : 2px solid wheat;
+    color: black; 
+    height:25px;
+    width:75px;
+    text-align: center;
+}
+
+button{
+    background-color: cornflowerblue;
+    border-radius:4px;
+    border-width: 0px;
+    width:100px;
+    height: 25px;
+
+}<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="tblVtsymbl.css">
+    </head>
+    <body style="padding: 20px;">
+        <div>
+            <h1>Employee Salary</h1>
+        <button type="button" onclick="clickOnRupee()">Rupee</button>
+        <button type="button" onclick="clickOnDollar()">Dollar</button>
+        <button type="button" onclick="clickOnEuro()">Euro</button>
+
+
+        <table id="table1">
+            <caption style="padding: 12px;">Indian Salary</caption>
+            <tr>
+            <th>sl no</th>
+            <th>Emp Name</th>
+            <th>Salary</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Siri</td>
+                <td>&#8377 25000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Preethi</td>
+                <td>&#8377 24000</td>
+            </tr>
+    
+            <tr>
+                <td>3</td>
+                <td>Riya</td>
+                <td>&#8377 25000</td>
+            </tr>
+            
+        </table>
+    
+        <table id="table2">
+            <caption style="padding: 12px;">American Salary</caption>
+            <tr>
+            <th>sl no</th>
+            <th>Emp Name</th>
+            <th>Salary</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Ava</td>
+                <td>&#36 25000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Amelia</td>
+                <td>&#36 24000</td>
+            </tr>
+    
+            <tr>
+                <td>3</td>
+                <td>Emma</td>
+                <td>&#36 25000</td>
+            </tr>
+            
+        </table>
+    
+        <table id="table3">
+            <caption style="padding: 12px;">European Salary</caption>
+            <tr>
+            <th>sl no</th>
+            <th>Emp Name</th>
+            <th>Salary</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Alice</td>
+                <td>&#8364 25000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Isla</td>
+                <td>&#8364 24000</td>
+            </tr>
+    
+            <tr>
+                <td>3</td>
+                <td>Sophia</td>
+                <td>&#8364 25000</td>
+            </tr>
+            
+        </table>
+    
+    
+    
+    </div>
+
+    
+    <script>
+        function clickOnRupee(){
+            document.getElementById("table1").style.display="block"
+            document.getElementById("table2").style.display="none";
+            document.getElementById("table3").style.display="none";
+
+        }
+
+        function clickOnDollar(){
+            document.getElementById("table2").style.display="block";
+            document.getElementById("table1").style.display="none";
+            document.getElementById("table3").style.display="none"
+        }
+
+        function clickOnEuro(){
+            document.getElementById("table3").style.display="block";
+            document.getElementById("table2").style.display="none";
+            document.getElementById("table1").style.display="none";
+        }
+    </script>
+        </body>
+    </html><!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+            <link rel="stylesheet" href="tblVtsymbl.css">
+        </head>
+        <body style="padding: 20px;">
+            <div>
+                <h1>Employee Salary</h1>
+            <button type="button" onclick="clickOnRupee()">Rupee</button>
+            <button type="button" onclick="clickOnDollar()">Dollar</button>
+            <button type="button" onclick="clickOnEuro()">Euro</button>
+    
+    
+            <table id="table1">
+                <caption style="padding: 12px;">Indian Salary</caption>
+                <tr>
+                <th>sl no</th>
+                <th>Emp Name</th>
+                <th>Salary</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Siri</td>
+                    <td>&#8377 25000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Preethi</td>
+                    <td>&#8377 24000</td>
+                </tr>
+        
+                <tr>
+                    <td>3</td>
+                    <td>Riya</td>
+                    <td>&#8377 25000</td>
+                </tr>
+                
+            </table>
+        
+            <table id="table2">
+                <caption style="padding: 12px;">American Salary</caption>
+                <tr>
+                <th>sl no</th>
+                <th>Emp Name</th>
+                <th>Salary</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Ava</td>
+                    <td>&#36 25000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Amelia</td>
+                    <td>&#36 24000</td>
+                </tr>
+        
+                <tr>
+                    <td>3</td>
+                    <td>Emma</td>
+                    <td>&#36 25000</td>
+                </tr>
+                
+            </table>
+        
+            <table id="table3">
+                <caption style="padding: 12px;">European Salary</caption>
+                <tr>
+                <th>sl no</th>
+                <th>Emp Name</th>
+                <th>Salary</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Alice</td>
+                    <td>&#8364 25000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Isla</td>
+                    <td>&#8364 24000</td>
+                </tr>
+        
+                <tr>
+                    <td>3</td>
+                    <td>Sophia</td>
+                    <td>&#8364 25000</td>
+                </tr>
+                
+            </table>
+        
+        
+        
+        </div>
+    
+        
+        <script>
+            function clickOnRupee(){
+                document.getElementById("table1").style.display="block"
+                document.getElementById("table2").style.display="none";
+                document.getElementById("table3").style.display="none";
+    
+            }
+    
+            function clickOnDollar(){
+                document.getElementById("table2").style.display="block";
+                document.getElementById("table1").style.display="none";
+                document.getElementById("table3").style.display="none"
+            }
+    
+            function clickOnEuro(){
+                document.getElementById("table3").style.display="block";
+                document.getElementById("table2").style.display="none";
+                document.getElementById("table1").style.display="none";
+            }
+        </script>
+            </body>
+        </html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="tblVtsymbl.css">
+    </head>
+    <body style="padding: 20px;">
+        <div>
+            <h1>Employee Salary</h1>
+        <button type="button" onclick="clickOnRupee()">Rupee</button>
+        <button type="button" onclick="clickOnDollar()">Dollar</button>
+        <button type="button" onclick="clickOnEuro()">Euro</button>
+
+
+        <table id="table1">
+            <caption style="padding: 12px;">Indian Salary</caption>
+            <tr>
+            <th>sl no</th>
+            <th>Emp Name</th>
+            <th>Salary</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Siri</td>
+                <td>&#8377 25000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Preethi</td>
+                <td>&#8377 24000</td>
+            </tr>
+    
+            <tr>
+                <td>3</td>
+                <td>Riya</td>
+                <td>&#8377 25000</td>
+            </tr>
+            
+        </table>
+    
+        <table id="table2">
+            <caption style="padding: 12px;">American Salary</caption>
+            <tr>
+            <th>sl no</th>
+            <th>Emp Name</th>
+            <th>Salary</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Ava</td>
+                <td>&#36 25000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Amelia</td>
+                <td>&#36 24000</td>
+            </tr>
+    
+            <tr>
+                <td>3</td>
+                <td>Emma</td>
+                <td>&#36 25000</td>
+            </tr>
+            
+        </table>
+    
+        <table id="table3">
+            <caption style="padding: 12px;">European Salary</caption>
+            <tr>
+            <th>sl no</th>
+            <th>Emp Name</th>
+            <th>Salary</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Alice</td>
+                <td>&#8364 25000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Isla</td>
+                <td>&#8364 24000</td>
+            </tr>
+    
+            <tr>
+                <td>3</td>
+                <td>Sophia</td>
+                <td>&#8364 25000</td>
+            </tr>
+            
+        </table>
+    
+    
+    
+    </div>
+
+    
+    <script>
+        function clickOnRupee(){
+            document.getElementById("table1").style.display="block"
+            document.getElementById("table2").style.display="none";
+            document.getElementById("table3").style.display="none";
+
+        }
+
+        function clickOnDollar(){
+            document.getElementById("table2").style.display="block";
+            document.getElementById("table1").style.display="none";
+            document.getElementById("table3").style.display="none"
+        }
+
+        function clickOnEuro(){
+            document.getElementById("table3").style.display="block";
+            document.getElementById("table2").style.display="none";
+            document.getElementById("table1").style.display="none";
+        }
+    </script>
+        </body>
+    </html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="tblVtsymbl.css">
+    </head>
+    <body style="padding: 20px;">
+        <div>
+            <h1>Employee Salary</h1>
+        <button type="button" onclick="clickOnRupee()">Rupee</button>
+        <button type="button" onclick="clickOnDollar()">Dollar</button>
+        <button type="button" onclick="clickOnEuro()">Euro</button>
+
+
+        <table id="table1">
+            <caption style="padding: 12px;">Indian Salary</caption>
+            <tr>
+            <th>sl no</th>
+            <th>Emp Name</th>
+            <th>Salary</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Siri</td>
+                <td>&#8377 25000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Preethi</td>
+                <td>&#8377 24000</td>
+            </tr>
+    
+            <tr>
+                <td>3</td>
+                <td>Riya</td>
+                <td>&#8377 25000</td>
+            </tr>
+            
+        </table>
+    
+        <table id="table2">
+            <caption style="padding: 12px;">American Salary</caption>
+            <tr>
+            <th>sl no</th>
+            <th>Emp Name</th>
+            <th>Salary</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Ava</td>
+                <td>&#36 25000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Amelia</td>
+                <td>&#36 24000</td>
+            </tr>
+    
+            <tr>
+                <td>3</td>
+                <td>Emma</td>
+                <td>&#36 25000</td>
+            </tr>
+            
+        </table>
+    
+        <table id="table3">
+            <caption style="padding: 12px;">European Salary</caption>
+            <tr>
+            <th>sl no</th>
+            <th>Emp Name</th>
+            <th>Salary</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Alice</td>
+                <td>&#8364 25000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Isla</td>
+                <td>&#8364 24000</td>
+            </tr>
+    
+            <tr>
+                <td>3</td>
+                <td>Sophia</td>
+                <td>&#8364 25000</td>
+            </tr>
+            
+        </table>
+    
+    
+    
+    </div>
+
+    
+    <script>
+        function clickOnRupee(){
+            document.getElementById("table1").style.display="block"
+            document.getElementById("table2").style.display="none";
+            document.getElementById("table3").style.display="none";
+
+        }
+
+        function clickOnDollar(){
+            document.getElementById("table2").style.display="block";
+            document.getElementById("table1").style.display="none";
+            document.getElementById("table3").style.display="none"
+        }
+
+        function clickOnEuro(){
+            document.getElementById("table3").style.display="block";
+            document.getElementById("table2").style.display="none";
+            document.getElementById("table1").style.display="none";
+        }
+    </script>
+        </body>
+    </html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="tblVtsymbl.css">
+    </head>
+    <body style="padding: 20px;">
+        <div>
+            <h1>Employee Salary</h1>
+        <button type="button" onclick="clickOnRupee()">Rupee</button>
+        <button type="button" onclick="clickOnDollar()">Dollar</button>
+        <button type="button" onclick="clickOnEuro()">Euro</button>
+
+
+        <table id="table1">
+            <caption style="padding: 12px;">Indian Salary</caption>
+            <tr>
+            <th>sl no</th>
+            <th>Emp Name</th>
+            <th>Salary</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Siri</td>
+                <td>&#8377 25000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Preethi</td>
+                <td>&#8377 24000</td>
+            </tr>
+    
+            <tr>
+                <td>3</td>
+                <td>Riya</td>
+                <td>&#8377 25000</td>
+            </tr>
+            
+        </table>
+    
+        <table id="table2">
+            <caption style="padding: 12px;">American Salary</caption>
+            <tr>
+            <th>sl no</th>
+            <th>Emp Name</th>
+            <th>Salary</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Ava</td>
+                <td>&#36 25000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Amelia</td>
+                <td>&#36 24000</td>
+            </tr>
+    
+            <tr>
+                <td>3</td>
+                <td>Emma</td>
+                <td>&#36 25000</td>
+            </tr>
+            
+        </table>
+    
+        <table id="table3">
+            <caption style="padding: 12px;">European Salary</caption>
+            <tr>
+            <th>sl no</th>
+            <th>Emp Name</th>
+            <th>Salary</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Alice</td>
+                <td>&#8364 25000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Isla</td>
+                <td>&#8364 24000</td>
+            </tr>
+    
+            <tr>
+                <td>3</td>
+                <td>Sophia</td>
+                <td>&#8364 25000</td>
+            </tr>
+            
+        </table>
+    
+    
+    
+    </div>
+
+    
+    <script>
+        function clickOnRupee(){
+            document.getElementById("table1").style.display="block"
+            document.getElementById("table2").style.display="none";
+            document.getElementById("table3").style.display="none";
+
+        }
+
+        function clickOnDollar(){
+            document.getElementById("table2").style.display="block";
+            document.getElementById("table1").style.display="none";
+            document.getElementById("table3").style.display="none"
+        }
+
+        function clickOnEuro(){
+            document.getElementById("table3").style.display="block";
+            document.getElementById("table2").style.display="none";
+            document.getElementById("table1").style.display="none";
+        }
+    </script>
+        </body>
+    </html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="tblVtsymbl.css">
+    </head>
+    <body style="padding: 20px;">
+        <div>
+            <h1>Employee Salary</h1>
+        <button type="button" onclick="clickOnRupee()">Rupee</button>
+        <button type="button" onclick="clickOnDollar()">Dollar</button>
+        <button type="button" onclick="clickOnEuro()">Euro</button>
+
+
+        <table id="table1">
+            <caption style="padding: 12px;">Indian Salary</caption>
+            <tr>
+            <th>sl no</th>
+            <th>Emp Name</th>
+            <th>Salary</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Siri</td>
+                <td>&#8377 25000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Preethi</td>
+                <td>&#8377 24000</td>
+            </tr>
+    
+            <tr>
+                <td>3</td>
+                <td>Riya</td>
+                <td>&#8377 25000</td>
+            </tr>
+            
+        </table>
+    
+        <table id="table2">
+            <caption style="padding: 12px;">American Salary</caption>
+            <tr>
+            <th>sl no</th>
+            <th>Emp Name</th>
+            <th>Salary</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Ava</td>
+                <td>&#36 25000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Amelia</td>
+                <td>&#36 24000</td>
+            </tr>
+    
+            <tr>
+                <td>3</td>
+                <td>Emma</td>
+                <td>&#36 25000</td>
+            </tr>
+            
+        </table>
+    
+        <table id="table3">
+            <caption style="padding: 12px;">European Salary</caption>
+            <tr>
+            <th>sl no</th>
+            <th>Emp Name</th>
+            <th>Salary</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Alice</td>
+                <td>&#8364 25000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Isla</td>
+                <td>&#8364 24000</td>
+            </tr>
+    
+            <tr>
+                <td>3</td>
+                <td>Sophia</td>
+                <td>&#8364 25000</td>
+            </tr>
+            
+        </table>
+    
+    
+    
+    </div>
+
+    
+    <script>
+        function clickOnRupee(){
+            document.getElementById("table1").style.display="block"
+            document.getElementById("table2").style.display="none";
+            document.getElementById("table3").style.display="none";
+
+        }
+
+        function clickOnDollar(){
+            document.getElementById("table2").style.display="block";
+            document.getElementById("table1").style.display="none";
+            document.getElementById("table3").style.display="none"
+        }
+
+        function clickOnEuro(){
+            document.getElementById("table3").style.display="block";
+            document.getElementById("table2").style.display="none";
+            document.getElementById("table1").style.display="none";
+        }
+    </script>
+        </body>
+    </html>
